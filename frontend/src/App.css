@@ -1,0 +1,81 @@
+/* App Component Container */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif; /* Clean font for the app */
+  background-color: #ffffff;
+}
+
+/* Main Header */
+.App-header {
+  background-color: #007bff; /* Blue header */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  border-bottom: 2px solid #ddd;
+}
+
+/* App Content */
+.App-content {
+  flex: 1; /* Allows this section to grow and take up available space */
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Card-style Box for Goal Items */
+.goal-card {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.goal-card h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.goal-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Add Goal Button */
+.add-goal-btn {
+  background-color: #28a745; /* Green color for adding goal */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-goal-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Footer */
+.App-footer {
+  background-color: #343a40; /* Dark footer */
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
