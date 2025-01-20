@@ -28,7 +28,7 @@ function App() {
 
   return (
     <Container className='my-4'>
-      <h1 className='text-center'>Goal Setter</h1>
+      <h1 className='text-center'>Goal Setter❤️❤️❤️❤️</h1>
       <GoalForm addGoal={addGoal} />
       <GoalList goals={goals} deleteGoal={deleteGoal} />
     </Container>

@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+  db:
+    image: mongo:latest
+    container_name: mern-db
+    ports:
+      - '27017:27017'
+    env_file:
+      - ./env_files/mongo.env
+    volumes:
+      - mern-db-data:/data/db
+    networks:
+      - mern-network
+
+  backend:
+    build: ./backend
+    container_name: mern-backend
+    ports:
+      - '5000:5000'
+    depends_on:
+      - db
+    env_file:
+      - ./env_files/backend.env
+    networks:
+      - mern-network
+    restart: always
+
+  frontend:
+    build: ./frontend
+    container_name: mern-frontend
+    ports:
+      - '3000:3000'
+    depends_on:
+      - backend
+    networks:
+      - mern-network
+
+networks:
+  mern-network:
+    driver: bridge
+
+volumes:
+  mern-db-data:
