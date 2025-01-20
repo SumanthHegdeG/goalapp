@@ -4,7 +4,7 @@
   "description": "Backend for Goal Setter App",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "dev": "nodemon server.js"
   },
   "author": "Sumanth Hegde",
